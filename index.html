@@ -59,19 +59,23 @@
 
                 <input type="radio" name="userGender" value="notInformed">
                 <label for="userGender">Prefiro nao informar</label>
+
                 <br>
+                
                 <label for="maritalStatus">Estado civil</label>
-                <select name="maritalStatus">
-                    <option value="notInformed">Selecione...</option>
+                <select name="maritalStatus" required>
+                    <option value="">Selecione...</option>
                     <option value="casado">casado</option>
                     <option value="solteiro">solteiro</option>
                     <option value="divorciado">divorciado</option>
                     <option value="casado">uniao estavel</option>
                 </select>
+
                 <br>
+
                 <label for="usarState">Estado</label>
-                <select name="usarState">
-                    <option value="notInformed">selecione...</option>
+                <select name="usarState" required>
+                    <option value="">selecione...</option>
                     <option value= "Acre">Acre </option>
                     <option value= "Alagoas">Alagoas </option>
                     <option value= "Amapá">Amapá </option>
@@ -101,6 +105,10 @@
                     <option value= "Tocantins">Tocantins </option>
                 </select>
 
+                <br>
+
+                <label for="userCity">cidade</label>
+                <input type="text" name="userCity">
 
             </fieldset>
                 <!-- botao para enviar -->
