@@ -18,39 +18,104 @@
             <form action="" METHOD="get">
                 <!-- Dados Pessoais -->
                  
-                <fieldset>
+            <!-- <fieldset>
                     <legend>dados Pessoais</legend>
-                    <!-- nome - obrigatorio -->
+
                     <label for="userName">Nome</label>
                     <input type="text" name="userName" required>
                     <br>
-                    <!-- idade - obrigatorio-->
+                 
                     <label for="userAge">idade</label>
                     <input type="number" name="userAge" min="12" max="100" required>
                     <br>
-                    <!-- data de nascimento - opcional -->
+           
                     <label for="userBirthDate">data de nascimento</label>
                     <input type="date" name="userBirthDate"> 
                     <br>
-                    <!-- email - obrigatorio -->
+              
                     <label for="userEmail">email</label>
-                    <input type="email" name="userName" required>
+                    <input type="email" name="userEmail" required>
                     <br>
-                    <!-- numero de telefone -->
+                
                     <label for="userPhone">idade</label>
                     <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="ddd + numero sem espaços ou hifen">
                     <br>
-                    <!-- upload fotos -->
+        
                     <label for="userImage">Upload de foto</label>
                     <input type="file" accept="image/*" name="userImage">
                     <br>
-                </fieldset>
+            </fieldset>  -->
                 
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Genero:</p>
+
+                <input type="radio" name="userGender" value="masculino"> 
+                <label for="userGender">masculino</label>
+
+                <input type="radio" name="userGender" value="feminino">
+                <label for="userGender">feminino</label>
+
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Prefiro nao informar</label>
+
+                <br>
+                
+                <label for="maritalStatus">Estado civil</label>
+                <select name="maritalStatus" required>
+                    <option value="">Selecione...</option>
+                    <option value="casado">casado</option>
+                    <option value="solteiro">solteiro</option>
+                    <option value="divorciado">divorciado</option>
+                    <option value="casado">uniao estavel</option>
+                </select>
+
+                <br>
+
+                <label for="usarState">Estado</label>
+                <select name="usarState" required>
+                    <option value="">selecione...</option>
+                    <option value= "Acre">Acre </option>
+                    <option value= "Alagoas">Alagoas </option>
+                    <option value= "Amapá">Amapá </option>
+                    <option value= "Amazonas">Amazonas </option>
+                    <option value= "Bahia">Bahia </option>
+                    <option value= "Ceará">Ceará </option>
+                    <option value= "Distrito Federal">Distrito Federal </option>
+                    <option value= "Espirito Santo">Espirito Santo </option>
+                    <option value= "Goiás">Goiás </option>
+                    <option value= "Maranhão">Maranhão </option>
+                    <option value= "Mato Grosso do Sul">Mato Grosso do Sul </option>
+                    <option value= "Mato Grosso">Mato Grosso </option>
+                    <option value= "Minas Gerais">Minas Gerais </option>
+                    <option value= "Pará">Pará </option>
+                    <option value= "Paraíba">Paraíba </option>
+                    <option value= "Paraná    ">Paraná </option>
+                    <option value= "Pernambuco">Pernambuco </option>
+                    <option value= "Piauí">Piauí </option>
+                    <option value= "Rio de Janeiro">Rio de Janeiro </option>
+                    <option value= "Rio Grande do Norte">Rio Grande do Norte </option>
+                    <option value= "Rio Grande do Sul">Rio Grande do Sul </option>
+                    <option value= "Rondônia">Rondônia </option>
+                    <option value= "Roraima">Roraima </option>
+                    <option value= "Santa Catarina">Santa Catarina </option>
+                    <option value= "São Paulo">São Paulo </option>
+                    <option value= "Sergipe">Sergipe </option>
+                    <option value= "Tocantins">Tocantins </option>
+                </select>
+
+                <br>
+
+                <label for="userCity">cidade</label>
+                <input type="text" name="userCity">
+
+            </fieldset>
                 <!-- botao para enviar -->
                  <button type="submit">Enviar</button>
             </form>
 
-            
+        
         </section>
     </main>
 
