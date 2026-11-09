@@ -18,52 +18,52 @@
             <form action="" METHOD="get">
                 <!-- Dados Pessoais -->
                  
-            <!-- <fieldset>
+                <fieldset>
                     <legend>dados Pessoais</legend>
 
-                    <label for="userName">Nome</label>
-                    <input type="text" name="userName" required>
+                    <label for="name">Nome</label>
+                    <input id=name type="text" name="userName" required>
                     <br>
                  
-                    <label for="userAge">idade</label>
-                    <input type="number" name="userAge" min="12" max="100" required>
+                    <label for="age">idade</label>
+                    <input id="age" type="number" name="userAge" min="12" max="100" required>
                     <br>
            
-                    <label for="userBirthDate">data de nascimento</label>
-                    <input type="date" name="userBirthDate"> 
+                    <label for="birthdate">data de nascimento</label>
+                    <input id="birthdate" type="date" name="userBirthDate"> 
                     <br>
               
-                    <label for="userEmail">email</label>
-                    <input type="email" name="userEmail" required>
+                    <label for="email">email</label>
+                    <input id="email" type="email" name="userEmail" required>
                     <br>
                 
-                    <label for="userPhone">idade</label>
-                    <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="ddd + numero sem espaços ou hifen">
+                    <label for="phone">idade</label>
+                    <input id="phone" type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="ddd + numero sem espaços ou hifen">
                     <br>
         
-                    <label for="userImage">Upload de foto</label>
-                    <input type="file" accept="image/*" name="userImage">
+                    <label for="image">Upload de foto</label>
+                    <input id="image" type="file" accept="image/*" name="userImage">
                     <br>
-            </fieldset>  -->
+                </fieldset>
                 
-            <fieldset>
+             <fieldset>
                 <legend>Perfil</legend>
 
                 <p>Genero:</p>
 
-                <input type="radio" name="userGender" value="masculino"> 
-                <label for="userGender">masculino</label>
+                <input id="masc" type="radio" name="userGender" value="masculino"> 
+                <label for="masc">masculino</label>
 
-                <input type="radio" name="userGender" value="feminino">
-                <label for="userGender">feminino</label>
+                <input id="fem" type="radio" name="userGender" value="feminino">
+                <label for="fem">feminino</label>
 
-                <input type="radio" name="userGender" value="notInformed">
-                <label for="userGender">Prefiro nao informar</label>
+                <input id="notInf" type="radio" name="userGender" value="notInformed">
+                <label for="notInf">Prefiro nao informar</label>
 
                 <br>
                 
-                <label for="maritalStatus">Estado civil</label>
-                <select name="maritalStatus" required>
+                <label for="marital">Estado civil</label>
+                <select id="marital" name="maritalStatus" required>
                     <option value="">Selecione...</option>
                     <option value="casado">casado</option>
                     <option value="solteiro">solteiro</option>
@@ -73,8 +73,8 @@
 
                 <br>
 
-                <label for="usarState">Estado</label>
-                <select name="usarState" required>
+                <label for="state">Estado</label>
+                <select id="state" name="usarState" required>
                     <option value="">selecione...</option>
                     <option value= "Acre">Acre </option>
                     <option value= "Alagoas">Alagoas </option>
@@ -107,11 +107,43 @@
 
                 <br>
 
-                <label for="userCity">cidade</label>
-                <input type="text" name="userCity">
+                <label for="city">cidade</label>
+                <input id="city" type="text" name="userCity">
 
+            </fieldset> 
+                
+            <fieldset>
+                <legend>habitos</legend>
+                
+                <p>Redes sociais</p>
+                <input id="inst" type="checkbox" name="social"
+                value="instagram">
+                <label for="inst">instagram</label>
+                <input id="face" type="checkbox" name="social" value="facebook">
+                <label for="face">Facebook</label>
+                <input id="linkd" type="checkbox" name="social" value="linkdin">
+                <label for="linkd">Linkdin</label>
+                <input id="ex" type="checkbox" name="social" value="x">
+                <label for="ex">x</label>
+
+                <br>
+
+                <label for="musicStyle">Estilo musical:</label>
+                <input list="styleTypes" id="musicStyle" type="text" name="userMusicStyle">
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="Pop">
+                    <option value="Samba">
+                    <option value="Sertanejo">     
+                </datalist>
+
+                <br>
+                
+                <label for="favoriteColor">Cor favorita</label>
+                <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
-                <!-- botao para enviar -->
+
+            <!-- botao para enviar -->
                  <button type="submit">Enviar</button>
             </form>
 
