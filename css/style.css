@@ -26,6 +26,7 @@ header img {
 
 h1 {
     font-family:"Fjalla One", sans-serif;
+    text-align: center;
 }
 
 p{
@@ -86,7 +87,6 @@ select:invalid,
 textarea:invalid{
     border-color: red;
 }
-
 
 input:valid,
 select:valid,
