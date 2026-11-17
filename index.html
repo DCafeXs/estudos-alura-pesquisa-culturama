@@ -22,31 +22,25 @@
             </header>   
 
             <form action="sucesso.html" METHOD="get">
-                <!-- Dados Pessoais -->
-                 
                 <fieldset>
                     <legend>dados Pessoais</legend>
 
                     <label for="name">Nome</label>
                     <input id=name type="text" name="userName" required>
                     <br>
-                 
                     <label for="age">idade</label>
                     <input id="age" type="number" name="userAge" min="12" max="100" required>
                     <br>
-           
                     <label for="birthdate">data de nascimento</label>
                     <input id="birthdate" type="date" name="userBirthDate"> 
                     <br>
-              
                     <label for="email">email</label>
                     <input id="email" type="email" name="userEmail" required>
                     <br>
-                
                     <label for="phone">telefone</label>
-                    <input id="phone" type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="ddd + numero sem espaços ou hifen">
+                    <input id="phone" type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="ddd + numero sem espaços ou hifen" aria-describedby="phoneHelp">
+                    <small id="phoneHelp">Preencha com 11 digitos no formato: DDD + numero sem espaços ou hifen.</small>
                     <br>
-        
                     <label for="image">Upload de foto</label>
                     <input id="image" type="file" accept="image/*" name="userImage">
                     <br>
